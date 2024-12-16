@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Aceite</title>
+</head>
+<body>
+    <header>
+        <h1>Aceite</h1>
+    </header>
+    <main>
+        <div>
+            <p>Nome: <span id="nomeExib"></span> R.A: <span id="raExib"></span></p>
+        </div>
+        <form method="post" target="_self">
+            <input type="text" value="" id="nome" name="nome" disabled>
+            <input type="text" value="" id="ra" name="ra" disabled>
+            <label> 
+                <input type="checkbox" name="recebimento" id="recebimento">
+                Confirmo o recebimento do documento.
+            </label>
+            <label>
+                <input type="checkbox" name="leitura" id="leitura">
+                Confirmo que realizei a leitura documento.
+            </label>
+            <input type="submit" value="Confirmar">
+        </form>
+    </main>
+    <footer>
+        <h2>UTFPR</h2>
+    </footer>
+</body>
+</html>
