@@ -1,13 +1,16 @@
-import { Box, Container, Typography } from "@mui/material"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
+import Documentos from "./pages/Documentos"
+import CreateDocumento from "./pages/CreateDocumento"
 
 function App() {
 
   return (
-    <Container>
-      <Box>
-        <Typography component="h1" variant="h1">Teste</Typography>
-      </Box>
-    </Container>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Documentos />} />
+        <Route path="/createDocumento" element={<CreateDocumento />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
